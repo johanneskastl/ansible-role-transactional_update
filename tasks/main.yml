@@ -1,0 +1,8 @@
+---
+# tasks file for transactional_update
+
+- name: "Run transactional update"
+  command: "/usr/sbin/transactional-update"
+  notify:
+    - "Reboot"
+    - "Wait for the machine(s) to be ready again"
