@@ -15,6 +15,9 @@ galaxy_info:
   - name: openSUSE Leap
     versions:
     - all
+  - name: openSUSE MicroOS
+    versions:
+    - all
 
   galaxy_tags: []
 
