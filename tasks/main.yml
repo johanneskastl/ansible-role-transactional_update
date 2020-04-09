@@ -3,6 +3,9 @@
 
 - name: "Run transactional update"
   command: "/usr/sbin/transactional-update"
+  register: transactional_update
+  changed_when:
+    - '"zypper: nothing to update" not in transactional_update.stdout'
   notify:
     - "Reboot"
     - "Wait for the machine(s) to be ready again"
