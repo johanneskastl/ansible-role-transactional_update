@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-transactional_update/workflows/Ansible%20Lint/badge.svg)
+
 transactional_update
 =========
 
