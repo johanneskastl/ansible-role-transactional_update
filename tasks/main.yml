@@ -11,5 +11,5 @@
     - "Wait for the machine(s) to be ready again"
   when: 'ansible_distribution == "openSUSE MicroOS"'
 
-- name: 'transactional-updates: force reboot at this point to not loose changes'
+- name: 'transactional-updates: force reboot at this point to not lose changes'
   meta: flush_handlers
