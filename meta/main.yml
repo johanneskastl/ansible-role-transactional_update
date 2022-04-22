@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'transactional_update'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Run the transactional-update command used on openSUSE/SLES machines'
   company: 'B1 Systems GmbH'
