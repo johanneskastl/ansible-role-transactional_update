@@ -9,7 +9,8 @@
   notify:
     - 'Reboot'
     - 'Wait for the machine(s) to be ready again'
-  when: 'ansible_distribution == "openSUSE MicroOS"'
+  when:
+    - 'ansible_distribution == "openSUSE MicroOS"'
 
 - name: 'Transactional-updates: force reboot at this point to not lose changes'
   ansible.builtin.meta: flush_handlers
