@@ -2,7 +2,7 @@
 # tasks file for transactional_update
 
 - name: "Run transactional update"
-  command: "/usr/sbin/transactional-update"
+  ansible.builtin.command: "/usr/sbin/transactional-update"
   register: transactional_update
   changed_when:
     - '"zypper: nothing to update" not in transactional_update.stdout'
@@ -12,4 +12,4 @@
   when: 'ansible_distribution == "openSUSE MicroOS"'
 
 - name: 'Transactional-updates: force reboot at this point to not lose changes'
-  meta: flush_handlers
+  ansible.builtin.meta: flush_handlers
